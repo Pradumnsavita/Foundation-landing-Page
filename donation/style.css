@@ -1,0 +1,129 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #83bbcf;
+    padding:0%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+  
+
+  }
+  span{
+    display: inline-block;
+    line-height: 1;
+    max-width: 380px;
+    outline: none;
+    overflow: hidden;
+    padding: 16px 12px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    font-size:  24px; 
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header .logo {
+    display: inline-block;
+    max-height: 62px;
+    max-width: 220px;
+    padding: 8px 4px 8px 12px;
+    vertical-align:auto;
+
+
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #6cd7ea;
+    border-radius:20px;
+  
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: rgba(245, 229, 217, 0.963);
+    color: rgb(11, 12, 12);
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+ .content{
+  background-image: url(paper.jpg);
+  text-align: center;
+  padding-top: 10%;
+  color: #0b5394;
+ }
+ .sub{
+  padding-top: 1%;
+ }
+ .med{
+  width: 100%;
+
+ }
+.info{
+  background-image: url(bg.jpg);
+  height: auto;
+  padding-bottom: 50%;
+  text-align: center;
+  font-size: large;
+  
+}
+.edu{
+  float:inline-end;
+  height: auto;
+  margin: 10px;
+
+}
+ 
+.vision{
+  width: auto;
+  float:left;
+  height: 100px;
+  margin: 10px;
+  text-align: justify;
+  
+
+}
+.contact{
+  text-align: center;
+  background: #58a6d3;
+  width: 100%;
+
+}
